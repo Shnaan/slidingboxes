@@ -107,6 +107,6 @@ body
 
 .exercise-4 .yellow
 {
-    right: 0; /* yellow postion is absolute will postion relative to blue outer box ,right 0 postion and align it to the top right of blue box*/
+    right: 0;  /* yellow postion is absolute will postion relative to blue outer box ,right 0 postion and align it to the top right of blue box*/
 
 }
