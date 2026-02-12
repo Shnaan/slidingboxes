@@ -38,15 +38,14 @@ body
 .exercise-4
 {
       position: relative; /* Set item postion relative to normal flow of the document */
-
-}
+} 
 
 .exercise-1 div,
 .exercise-2 div,
 .exercise-3 div,
 .exercise-4 div
 {
-       position: absolute; /* remove element from normal document flow(no space created for elements)  will be postioning with top,left,right and bottom property */
+       position: absolute; /* remove element from normal document flow will be postioning with top,left,right and bottom property relative to its closest positioned ancestor div(surrounding box)*/
 }
 
 /* Exercise 2 */
@@ -77,28 +76,37 @@ body
 
 .exercise-3 .green
 {
+    position: relative; /*  make green postion relative to allow to allow blue and yellow box position positioned relative to it */
 
 }
 
 .exercise-3 .blue,
 .exercise-3 .yellow
 {
-
+  /* make both blue and yellow box positioned relative to outer box this allow both
+   boxes to position align to rigth and bottom of each draw the requested shape by set right and bottom to 0 */
+  position: absolute; 
+  right: 0;
+  bottom: 0;
 }
 
 /* Exercise 4 */
 
 .exercise-4
 {
-
+    top: 360px; /*  postion the the div create and show in viewport*/
 }
+
 
 .exercise-4 .blue
 {
+  position: fixed; /* make blue postion itself relative to vieport no longer relative to outer box (green)*/
+  right: 0;
 
-}
+} 
 
 .exercise-4 .yellow
 {
+    right: 0; /* yellow postion is absolute will postion relative to blue outer box ,right 0 postion and align it to the top right of blue box*/
 
 }
