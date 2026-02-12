@@ -37,6 +37,7 @@ body
 .exercise-3,
 .exercise-4
 {
+      position: relative; /* Set item postion relative to normal flow of the document */
 
 }
 
@@ -45,13 +46,14 @@ body
 .exercise-3 div,
 .exercise-4 div
 {
-
+       position: absolute; /* remove element from normal document flow(no space created for elements)  will be postioning with top,left,right and bottom property */
 }
 
 /* Exercise 2 */
 
 .exercise-2
 {
+     top: 120px; /*  postion exercise-2 div  120 from top of document make it showed and reserve space*/
 
 }
 
@@ -59,6 +61,9 @@ body
 .exercise-2 .blue,
 .exercise-2 .yellow
 {
+  /*  add 10px top and lef to center  green ,blue and yellow boxes inside red box exercise-2*/
+    top: 10px; 
+    left: 10px;
 
 }
 
@@ -66,8 +71,9 @@ body
 
 .exercise-3
 {
-
+    top: 240px;
 }
+
 
 .exercise-3 .green
 {
